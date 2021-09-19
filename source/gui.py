@@ -43,7 +43,10 @@ option4.config(font=('', 25))
 option4.place(relx=.521, rely=.7, relwidth=.9, relheight=.13, anchor='n')
 
 
-def out():
+def out() -> None:
+    """
+    Outputs command to be executed.
+    """
     yt = Youtube(url_entry.get())
     Youtube.execute(r.get(), yt)
 
